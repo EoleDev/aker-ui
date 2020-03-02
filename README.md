@@ -12,7 +12,9 @@ Use it at your own risk.
 If using another webserver than apache, don't forget to implement the rewrite as shown in .htaccess file.
 
  - Clone this repo
- - Clone the submodule : git submodule update
+ - Clone the submodule : 
+   - run `git submodule init`
+   - run `git submodule update`
  - In server dir, install composer dependencies
    - Download composer
    - Run : composer update
