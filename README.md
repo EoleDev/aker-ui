@@ -21,5 +21,5 @@ If using another webserver than apache, don't forget to implement the rewrite as
  - Create the webserver configuration, you will need php with pdo and mysql extension
  - Edit the server settings : server/app/settings.php and set the parameters for the aker database
  
-
+NOTICE : When using apache, you must set the property `AllowOverride` to at least `FileInfo` to allow the RewriteRules to work.
 The UI is accessible at the url /app/ !
