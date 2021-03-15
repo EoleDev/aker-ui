@@ -12,12 +12,15 @@ Use it at your own risk.
 If using another webserver than apache, don't forget to implement the rewrite as shown in .htaccess file.
 
  - Clone this repo
- - Clone the submodule : git submodule update
+ - Clone the submodule : 
+   - run `git submodule init`
+   - run `git submodule update`
  - In server dir, install composer dependencies
    - Download composer
    - Run : composer update
  - Create the webserver configuration, you will need php with pdo and mysql extension
  - Edit the server settings : server/app/settings.php and set the parameters for the aker database
  
+NOTICE : When using apache, you must set the property `AllowOverride` to at least `FileInfo` to allow the RewriteRules to work.
 
 The UI is accessible at the url /app/ !
